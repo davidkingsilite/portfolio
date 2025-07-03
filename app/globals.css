@@ -10,7 +10,25 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-bevietnam: var(--font-be-vietnam);
+  --font-outfit: var(--font-outfit);
 }
+
+@layer utilities {
+  .animate-marquee {
+    animation: marquee 15s linear infinite;
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+}
+
 
 @media (prefers-color-scheme: dark) {
   :root {
