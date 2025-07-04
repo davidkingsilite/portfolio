@@ -96,9 +96,10 @@ export default async function BlogPost({
       </div>
 
       <article className="prose prose-sm sm:prose-base max-w-none prose-headings:font-semibold prose-p:text-gray-700 prose-li:text-gray-600">
-        {post.content?.split('\n').map((line: string, i: Key) => (
-          <p key={i}>{line.trim()}</p>
-        ))}
+       <div
+         className="prose"
+         dangerouslySetInnerHTML={{ __html: post.content || '' }}
+        />
       </article>
     </main>
   );

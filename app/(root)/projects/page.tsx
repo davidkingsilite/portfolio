@@ -12,7 +12,7 @@ interface ProjectProps {
 const ProjectsPage = ({project}:ProjectProps) => {
     console.log(project);
   return (
-    <section className="max-w-7xl mx-auto px-4 py-16 font-sans">
+    <section className="max-w-7xl mx-auto px-4 py-16 md:px-12 font-bevietnam">
       {/* Heading */}
       <div className="text-center mb-12">
         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Projects</h1>

@@ -55,26 +55,26 @@ const ContactPage = () => {
             </div>
           </div>
 
-          {/* <div className="flex items-start gap-4">
+          <div className="flex items-start gap-4">
             <MapPin className="text-primary-green-100 w-5 h-5 mt-1" />
             <div>
               <h4 className="font-semibold">Address</h4>
               <p className="text-sm text-gray-600"></p>
             </div>
-          </div> */}
+          </div>
 
           {/* Optional: Google Map Embed */}
-          {/* <div className="mt-6">
+          <div className="mt-6">
             <iframe
               title="Pro Cleaning Location"
-              src="https://maps.google.com/maps?q=New York, USA&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              src="https://maps.google.com/maps?q=Chicago, USA&t=&z=13&ie=UTF8&iwloc=&output=embed"
               width="100%"
               height="200"
               style={{ border: 0 }}
               loading="lazy"
               className="rounded-md"
             ></iframe>
-          </div> */}
+          </div>
         </div>
        
       </section>

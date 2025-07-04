@@ -5,7 +5,7 @@ import { Blog } from '@/models/Blog';
 export const GET = async () => {
   try {
     await dbConnect();
-    const posts = await Blog.find().sort({ date: -1 });
+    const posts = await Blog.find().sort({ date: 1 });
     return NextResponse.json(posts);
   } catch (error) {
     console.error('Error creating post:', error);

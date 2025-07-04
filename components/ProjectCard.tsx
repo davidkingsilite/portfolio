@@ -211,12 +211,12 @@ interface ProjectProps {
 const ProjectCard = ({project}: ProjectProps) => {
   return (
     <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition overflow-hidden">
-      <div className="relative w-full h-52 md:h-64">
+      <div className="relative w-full h-40 md:h-48">
         <Image
-          src={project.imageUrl || '/clientPic1.png'}
+          src={project.imageUrl}
           alt={project.title}
           fill
-          className="object-cover"
+          className="object-contain h-[100px] w-full"
           sizes="(min-width: 768px) 50vw, 100vw"
           loading="lazy"
         />
@@ -247,9 +247,7 @@ const ProjectCard = ({project}: ProjectProps) => {
         >
           Visit Project
         </Link>
-        <Link href={project.projectUrl} className=''>
-          {project.title}
-        </Link>
+        
       </div>
     </div>
   );

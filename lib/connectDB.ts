@@ -56,3 +56,4 @@ async function connectDB(): Promise<Mongoose> {
 }
 
 export default connectDB;
+

@@ -37,6 +37,7 @@ export default function ContactForm() {
     } catch {
       setStatus('error');
     }
+    console.log(Error)
   };
 
   return (
@@ -90,6 +91,7 @@ export default function ContactForm() {
 
       {status === 'success' && <p className="text-green-600 mt-2">Thanks for reaching out! 👋</p>}
       {status === 'error' && <p className="text-red-500 mt-2">Something went wrong. Try again.</p>}
+     
     </form>
   );
 }

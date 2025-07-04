@@ -140,9 +140,9 @@ export async function POST(req: Request) {
       `,
     });
 
-    return NextResponse.json({ message: 'Subscribed successfully.' }, { status: 201 });
+    return NextResponse.json({ message: 'Subscribed successfully!.' }, { status: 201 });
   } catch (error) {
-    console.error('Newsletter error:', error);
+    console.error("MongoDB connection failed:", error) 
     return NextResponse.json({ error: 'Something went wrong. Please try again later.' }, { status: 500 });
   }
 }

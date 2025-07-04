@@ -24,63 +24,38 @@
 //   );
 // } 
 
-'use client';
 
+
+// app/blog/page.tsx
+import connectDB from '@/lib/connectDB';
+import {Blog} from '@/models/Blog';
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
 
-const blogPosts = [
-  {
-    id: 1,
-    slug: '10-proven-tips-keeping-home-spotless',
-    title: '10 Proven Tips for Keeping Your Home Spotless',
-    description:
-      'Learn expert techniques to maintain a clean and organized home without spending all day scrubbing.',
-    image: '/Image-(10).png',
-    date: 'June 15, 2025',
-    author: 'Danielle Harper',
-    category: 'Home Cleaning',
-  },
-  {
-    id: 2,
-    slug: 'office-cleaning-matters',
-    title: 'Office Cleaning: Why It Matters for Productivity',
-    description:
-      'Explore how a clean office contributes to employee satisfaction, productivity, and client impressions.',
-    image: '/Image-(11).png',
-    date: 'May 30, 2025',
-    author: 'Claire Whitmore',
-    category: 'Office Cleaning',
-  },
-  {
-    id: 3,
-    slug: 'eco-friendly-cleaning',
-    title: 'Eco-Friendly Cleaning Products That Actually Work',
-    description:
-      'Discover our favorite green cleaning products that are safe for your family and the planet.',
-    image: '/Image-(12).png',
-    date: 'May 10, 2025',
-    author: 'Olivia Mensah',
-    category: 'Green Cleaning',
-  },
-];
 
-const BlogPage = () => {
+ 
+
+const BlogPage = async () => {
+  
+  await connectDB();
+  const posts = await Blog.find({}).sort({ date: 1 }).lean();
+
+
+
   return (
     <main className="px-4 py-12 md:px-8 lg:px-20 font-bevietnam bg-white text-black-100">
       
       {/* Hero */}
       <section className="max-w-7xl mx-auto text-center mb-14">
-        <h1 className="text-4xl font-bold mb-3">Our Cleaning Blog</h1>
+        <h1 className="text-4xl font-bold mb-3">Our  Blog</h1>
         <p className="text-gray-600 text-sm md:text-base max-w-2xl mx-auto">
-          Helpful tips, insights, and news from Shaninomi Cleaning — your go-to source for professional and home cleaning advice.
+          Helpful tips, insights, and news from Ilite.dev — your go-to source for professional and tech advice.
         </p>
       </section>
 
       {/* Blog Cards */}
       <section className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-        {blogPosts.map((post) => (
+        {posts.map((post) => (
           <div key={post.id} className="border rounded-xl overflow-hidden shadow-sm hover:shadow-md transition bg-white">
             <div className="w-full h-48 relative">
               <Image
@@ -110,7 +85,7 @@ const BlogPage = () => {
 
       {/* CTA */}
       <section className="text-center mt-20 bg-primary-green-100/10 py-12 rounded-xl max-w-5xl mx-auto">
-        <h2 className="text-xl font-bold mb-3">Want Cleaning Tips in Your Inbox?</h2>
+        <h2 className="text-xl font-bold mb-3">Want Tips in Your Inbox?</h2>
         <p className="text-sm text-gray-700 mb-6">
           Subscribe to our newsletter for regular updates and promotions.
         </p>
