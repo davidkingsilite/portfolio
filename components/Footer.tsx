@@ -6,16 +6,16 @@ import FooterNewsletter from './FooterNewsletter';
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-gray-300 py-10 font-bevietnam px-12 md-px-24">
-      <div className="max-w-7xl mx-auto px-4">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+    <footer className="bg-gray-900 text-gray-300 py-4 md:py-10 font-bevietnam">
+      <div className="max-w-7xl mx-auto px-4 md:px-10">
+        <div className="flex flex-col md:flex-row justify-between gap-6">
           {/* Logo / Branding */}
           <div>
-            <h2 className="text-xl font-bold text-white">ILITE.DEV</h2>
-            <p className="text-sm text-gray-400">Building web experiences with modern tools.</p>
+            <h2 className="text-xl font-bold text-white p-1">ILITE.DEV</h2>
+            <p className="text-sm text-gray-400 p-1">Building web experiences with modern tools.</p>
           </div>
 
-          <div className="mx-0 flex flex-col md:flex-row gap-10 md:gap-16 text-nowrap">
+          <div className="mx-0 flex flex-col md:flex-row gap-10 md:gap-16 p-4 text-nowrap">
         <div className="flex md:flex-col lg:flex-row gap-10">
         {/* Company */}
         <div>
@@ -45,7 +45,7 @@ export default function Footer() {
       </div>
 
           {/* Social Icons */}
-          <div className="flex gap-4">
+          <div className="flex gap-4 pl-4 md:pt-20">
             <Link href="https://facebook.com" target="_blank" className="hover:text-white">
               <Facebook size={18} />
             </Link>

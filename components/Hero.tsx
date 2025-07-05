@@ -5,14 +5,14 @@ import Link from 'next/link';
 
 export default function Hero() {
   return (
-    <section className="flex flex-col-reverse md:flex-row items-center justify-between gap-10 px-12 md:px-24 py-12 md:py-24">
+    <section className="flex flex-col-reverse md:flex-row items-center justify-between gap-10 px-2 md:px-16 py-2 md:py-16">
       {/* Text Section */}
       <div className="flex-1 text-center md:text-left space-y-6">
         <h1 className="text-4xl sm:text-5xl font-bold text-black">
           Hello, I&apos;m David — <br />
           A Frontend Web Developer
         </h1>
-        <p className="text-gray-600 max-w-md mx-auto md:mx-0">
+        <p className="text-gray-600 max-w-md mx-auto md:mx-0 text-base">
           I craft responsive, performant, and visually engaging web experiences using modern technologies like Next.js, Tailwind CSS, and TypeScript.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">

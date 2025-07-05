@@ -96,7 +96,7 @@ export default function Navbar() {
 
           <button
             onClick={() => router.push('/contact')}
-            className="px-6 py-3 border border-black text-black rounded bg-black hover:bg-gray-800 hover:text-white font-medium transition"
+            className="px-6 py-3 border border-black text-white rounded bg-black hover:bg-gray-800 font-medium transition"
           >
             Hire Me
           </button>

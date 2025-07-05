@@ -14,7 +14,7 @@ export const projects = [
     description: 'An online store built with full cart functionality and Stripe integration.',
     imageUrl: '/cardealer.png',
     projectUrl: 'https://ecommerce-site.com',
-    techStack: ['React', 'Next.js', 'Stripe'],
+    techStack: ['React', 'Next.js','Tailwind CSS', 'Stripe'],
   },
   {
     id: 3,
@@ -22,7 +22,7 @@ export const projects = [
     description: 'Art Saving Lives.',
     imageUrl: '/artsavin.png',
     projectUrl: 'https://artsavinglifes.onrender.com',
-    techStack: ['React', 'Next.js', 'Stripe'],
+    techStack: ['React', 'Next.js', 'Material UI', 'Stripe'],
   },
   {
     id: 4,
