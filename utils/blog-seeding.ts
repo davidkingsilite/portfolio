@@ -85,21 +85,22 @@ async function allBlogs() {
         author: 'Olivia Mensah',
         category: 'Static sites are fast but dynamic',
         highlight: false,
-        content:`Static sites are fast — but dynamic, real-time experiences need server logic. That’s where edge functions come in.
+        content:`Static sites are fast — <strong>but dynamic</strong>, real-time experiences need server logic. That’s where edge functions come in.
 
         In 2025, platforms like Vercel, Cloudflare, and Bun.sh are allowing developers to deploy server logic at the edge — close to users.
         
         <strong>What Are Edge Functions?</strong>
         They're lightweight serverless functions that execute near the user’s region. That means lower latency, faster response times, and better scalability.
         
-        <strong>Real Use Cases:</strong>
-        Auth validation
+        <h2><strong>Real Use Cases:</strong></h2>
+        <ul>
+        <li>1. Auth validation</li>
         
-        Real-time personalization
+        <li>2. Real-time personalization</li>
         
-        Geo-specific content or redirects
-        
-        <strong>Why It Matters for Frontend Devs</strong>
+        <li>3. Geo-specific content or redirects</li>
+        </ul>
+        <h2><strong>Why It Matters for Frontend Devs</strong></h2>
         You can now do things like: 
         This was unthinkable just a few years ago. Today, it's a best practice.`
       },

@@ -57,12 +57,13 @@ const BlogPage = async () => {
       <section className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
         {posts.map((post) => (
           <div key={post.id} className="border rounded-xl overflow-hidden shadow-sm hover:shadow-md transition bg-white">
-            <div className="w-full h-48 relative">
+            <div className="w-full h-64 relative">
               <Image
                 src={post.image}
                 alt={post.title}
-                fill
-                className="rounded-t-xl object-cover"
+                width={200}
+                height={350}
+                className="rounded-t-xl object-center w-full h-full"
               />
             </div>
             <div className="p-5 flex flex-col gap-2">

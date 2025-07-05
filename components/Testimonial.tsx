@@ -10,34 +10,25 @@ const testimonials = [
     role: 'Business Woman',
     rating: 5,
     message:
-      'Excellent service! The team was punctual, thorough, and left my home sparkling clean. Highly recommend for anyone needing a reliable and detailed cleaning service',
-    image: '/clientPic1.png', // Replace with actual image URL or static import
+      '"Working with ilite.dev was a game changer. The project was delivered on time, with attention to detail, and exceeded our expectations. Highly recommended!"',
+    image: '/alex-starnes.jpg', // Replace with actual image URL or static import
   },
   {
     name: 'Claire Whitmore',
     role: 'Business Woman',
     rating: 5,
     message:
-      'Excellent service! The team was punctual, thorough, and left my home sparkling clean. Highly recommend for anyone needing a reliable and detailed cleaning service',
-    image: '/Gemini.png', // Replace with actual image URL or static import
+      '"Professional, creative, and reliable. They understood exactly what we needed and brought our vision to life perfectly."',
+    image: '/christina-wocin.jpg', // Replace with actual image URL or static import
   },
   {
-    name: 'Emily Zhang',
-    role: 'Business Woman',
+    name: 'Emily Carter',
+    role: 'Tech Startup Founder',
     rating: 5,
     message:
-      'Excellent service! The team was punctual, thorough, and left my home sparkling clean. Highly recommend for anyone needing a reliable and detailed cleaning service',
-    image: '/client2.png', // Replace with actual image URL or static import
+      '"One of the best collaborators I’ve worked with. The quality, communication, and dedication were top-notch from start to finish."',
+    image: '/olga-zhura.jpg', // Replace with actual image URL or static import
   },
-  {
-    name: 'Marcus Ellington',
-    role: 'Business Man',
-    rating: 5,
-    message:
-      'Excellent service! The team was punctual, thorough, and left my home sparkling clean. Highly recommend for anyone needing a reliable and detailed cleaning service',
-    image: '/danny-byers.png', // Replace with actual image URL or static import
-  },
-  
 ];
 
 export default function Testimonials() {
@@ -63,8 +54,7 @@ export default function Testimonials() {
             Feedback About Their <br /> Experience With Us
           </h2>
           <p className="text-gray-500 max-w-md mb-8">
-            Read testimonials from our satisfied clients. See how our cleaning services have made a difference in their lives and homes
-          </p>
+          What People Are Saying About Us We take pride in delivering exceptional work that speaks for itself—but don’t just take our word for it. Here’s what some of our clients have to say:          </p>
 
           <div className="flex gap-4">
             <button
