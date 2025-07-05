@@ -46,7 +46,7 @@ export default function Navbar() {
             <Link
               key={link.id}
               href={link.url}
-              className="text-[#4D4D4D] hover:text-primary-green-100 transition"
+              className="text-[#4D4D4D] hover:text-black transition"
             >
               {link.title}
             </Link>
@@ -113,3 +113,4 @@ export default function Navbar() {
     </header>
   );
 }
+

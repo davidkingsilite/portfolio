@@ -1,30 +1,3 @@
-// import Link from 'next/link';
-// import { getAllBlogs } from '@/lib/blog';
-
-// export default async function BlogListPage() {
-//   const posts = await getAllBlogs();
-
-//   return (
-//     <div className="max-w-4xl mx-auto py-16 px-4">
-//       <h1 className="text-4xl font-bold mb-6">Blog</h1>
-//       <ul className="space-y-8">
-//         {posts.map((post) => (
-//           <li key={post.slug}>
-//             <Link href={`/blog/${post.slug}`}>
-//               <h2 className="text-2xl font-semibold text-green-600 hover:underline">
-//                 {post.title}
-//               </h2>
-//               <p className="text-gray-600 text-sm mb-2">{new Date(post.date).toLocaleDateString()}</p>
-//               <p className="text-gray-800">{post.excerpt}</p>
-//             </Link>
-//           </li>
-//         ))}
-//       </ul>
-//     </div>
-//   );
-// } 
-
-
 
 // app/blog/page.tsx
 import connectDB from '@/lib/connectDB';
@@ -90,7 +63,7 @@ const BlogPage = async () => {
         <p className="text-sm text-gray-700 mb-6">
           Subscribe to our newsletter for regular updates and promotions.
         </p>
-        <p className="inline-block bg-primary-green-100 text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-green-600 transition">
+        <p className="inline-block text-white px-6 py-2 rounded-full text-sm font-medium bg-green-600 transition">
           Subscribe Now
           </p>
       </section>
