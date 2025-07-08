@@ -50,8 +50,14 @@ export const projects = [
   },
 ];
 
+type NavLink = {
+  id: number;
+  title: string;
+  url?: string;
+  isDropdown?: boolean;
+};
 
-export const navbarLinks = [
+export const navbarLinks:NavLink[] = [
   {
       id: 1,
       title: "Home",
@@ -60,8 +66,8 @@ export const navbarLinks = [
   },
   {
       id: 2,
-      title: "About",
-      url: "/about"
+      title: "Services",
+      isDropdown: true,
   },
   {
       id: 3,
@@ -78,4 +84,9 @@ export const navbarLinks = [
       title: "Contact",
       url: "/contact"
   },
+  {
+    id: 6,
+    title: "About-us",
+    url: "/about"
+},
  ]

@@ -32,7 +32,7 @@ export default function Hero() {
       </div>
 
       {/* Image Section */}
-      <div className="flex-1 flex justify-center">
+      <div className="flex-1 flex justify-center w-auto h-auto">
         <Image
           src="/dav1.jpg" // <-- Replace with your actual image path in /public
           alt="David Nwachukwu"

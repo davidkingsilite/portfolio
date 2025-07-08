@@ -15,7 +15,7 @@ export default function Footer() {
             <p className="text-sm text-gray-400 p-1">Building web experiences with modern tools.</p>
           </div>
 
-          <div className="mx-0 flex flex-col md:flex-row gap-10 md:gap-16 p-4 text-nowrap">
+          <div className="mx-0 flex flex-col md:flex-row gap-8 lg:gap-16 p-4 text-nowrap">
         <div className="flex md:flex-col lg:flex-row gap-10">
         {/* Company */}
         <div>

@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { useRouter, usePathname } from 'next/navigation';
 import { Menu, X } from 'lucide-react';
 import { navbarLinks } from '@/constants';
+import { ServicesDropdown } from './ServicesDropdown';
 
 
 export default function Navbar() {
@@ -42,15 +43,24 @@ export default function Navbar() {
 
         {/* Desktop Nav */}
         <div className="hidden lg:flex gap-6 font-bevietnam">
-          {navbarLinks.map((link) => (
-            <Link
-              key={link.id}
-              href={link.url}
-              className="text-[#4D4D4D] hover:text-black transition"
+          {navbarLinks.map((link) =>{
+             if (link.isDropdown && link.title === 'Services') {
+              return <ServicesDropdown key="services" />
+              }
+             
+              if (!link.url) return null; // avoid undefined href
+
+         return (
+           <Link
+           key={link.id}
+           href={link.url}
+           className="text-[#4D4D4D] hover:text-black transition hover:bg-gray-100 p-3 rounded-2xl"
             >
               {link.title}
-            </Link>
-          ))}
+           </Link>
+)
+          
+        }  )}
         </div>
 
         {/* Hamburger Menu */}
@@ -74,7 +84,7 @@ export default function Navbar() {
         }`}
       >
         {/* Close Icon */}
-        <div className="flex justify-between items-center px-4 py-4 mr-5 border-b">
+        <div className="flex justify-between items-center px-4 py-4 border-b">
           <span className="text-lg font-bold text-primary-green-100">Menu</span>
           <button onClick={() => setIsOpen(false)} className='bg-gray-400 rounded-full'>
             <X size={28} />
@@ -83,16 +93,28 @@ export default function Navbar() {
 
         {/* Drawer Links */}
         <div className="flex flex-col px-8 py-4 gap-4 font-bevietnam">
-          {navbarLinks.map((link) => (
+          {navbarLinks.map((link) => {
+
+            if (link.isDropdown && link.title === 'Services') {
+              return <ServicesDropdown key="services-mobile" />
+            }
+              
+            
+            if (!link.url) return null; // avoid undefined href
+
+
+            return (
             <Link
               key={link.id}
               href={link.url}
-              className="text-gray-700 hover:text-primary-green-100 py-2 border-b px-4"
+              className="text-gray-700 hover:text-primary-green-100 py-2 border-b hover:bg-gray-100 px-4"
               onClick={() => setIsOpen(false)}
             >
               {link.title}
             </Link>
-          ))}
+            );
+              
+          })}
 
           <button
             onClick={() => router.push('/contact')}
