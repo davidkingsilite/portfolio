@@ -39,7 +39,7 @@ export default function PrivacyPolicy() {
   
         <h2 className="text-xl font-semibold mt-8 mb-2">5. Your Rights</h2>
         <p className="mb-4">
-          You have the right to request access to, correction of, or deletion of your personal data. To make a request, please contact us at <a href="mailto:hello@ilite.dev" className="text-blue-600 underline">hello@ilite.dev</a>.
+          You have the right to request access to, correction of, or deletion of your personal data. To make a request, please contact us at <a href="mailto:support@ilite.dev" className="text-blue-600 underline">support@ilite.dev</a>.
         </p>
   
         <h2 className="text-xl font-semibold mt-8 mb-2">6. Cookies & Tracking</h2>

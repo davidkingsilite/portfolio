@@ -1,3 +1,5 @@
+import ContactForm from "./ContactForm";
+
 export default function SupportPage() {
     return (
       <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 font-bevietnam text-gray-800">
@@ -35,31 +37,9 @@ export default function SupportPage() {
           </div>
   
           {/* Support Form (optional) */}
-          <div>
+          <div className="max-w-xl">
             <h2 className="text-xl font-semibold mb-4">📝 Send Us a Message</h2>
-            <form className="space-y-4 max-w-xl">
-              <div>
-                <label htmlFor="name" className="block mb-1 font-medium">Name</label>
-                <input id="name" type="text" className="w-full px-4 py-2 border rounded" required />
-              </div>
-  
-              <div>
-                <label htmlFor="email" className="block mb-1 font-medium">Email</label>
-                <input id="email" type="email" className="w-full px-4 py-2 border rounded" required />
-              </div>
-  
-              <div>
-                <label htmlFor="message" className="block mb-1 font-medium">Message</label>
-                <textarea id="message" rows={5} className="w-full px-4 py-2 border rounded" required />
-              </div>
-  
-              <button
-                type="submit"
-                className="bg-black text-white px-6 py-2 rounded hover:bg-gray-800 transition"
-              >
-                Submit
-              </button>
-            </form>
+            <ContactForm />
           </div>
         </section>
       </main>

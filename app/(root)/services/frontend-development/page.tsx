@@ -73,7 +73,7 @@ export default function FrontendPage() {
             Whether it’s a full redesign or a performance boost — we’ve got you covered.
           </p>
           <a
-            href="/quote"
+            href="/contact"
             className="inline-block bg-black text-white px-6 py-3 rounded hover:bg-gray-800 transition font-medium"
           >
             Request a Frontend Quote

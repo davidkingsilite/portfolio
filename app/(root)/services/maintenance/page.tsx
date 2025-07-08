@@ -60,7 +60,7 @@ export default function MaintenancePage() {
             Get affordable maintenance packages tailored to your needs. No stress, no downtime.
           </p>
           <a
-            href="/quote"
+            href="/contact"
             className="inline-block bg-black text-white px-6 py-3 rounded hover:bg-gray-800 transition font-medium"
           >
             Request a Maintenance Quote

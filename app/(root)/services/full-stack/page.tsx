@@ -57,7 +57,7 @@ export default function FullStackPage() {
             Need a complete web application built from scratch? We’re ready to be your full-stack partner.
           </p>
           <a
-            href="/quote"
+            href="/contact"
             className="inline-block bg-black text-white px-6 py-3 rounded hover:bg-gray-800 transition font-medium"
           >
             Request a Full-Stack Quote

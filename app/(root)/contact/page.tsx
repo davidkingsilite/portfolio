@@ -34,8 +34,8 @@ const ContactPage = () => {
           <div className="flex items-start gap-4">
             <Mail className="text-primary-green-100 w-5 h-5 mt-1" />
             <div>
-              <h4 className="font-semibold">Email</h4>
-              <p className="text-sm text-gray-600">ilite.dev@gmail.com</p>
+              <h4 className="font-semibold">Emails</h4>
+              <p className="text-sm text-gray-600">ilite.dev@gmail.com || support@ilite.dev</p>
             </div>
           </div>
 
@@ -43,7 +43,7 @@ const ContactPage = () => {
             <Phone className="text-primary-green-100 w-5 h-5 mt-1" />
             <div>
               <h4 className="font-semibold">Phone</h4>
-              <p className="text-sm text-gray-600">+1 (555) 123-4567</p>
+              <p className="text-sm text-gray-600">+1 (312) 444-0790</p>
             </div>
           </div>
 
