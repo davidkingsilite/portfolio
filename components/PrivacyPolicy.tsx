@@ -54,7 +54,7 @@ export default function PrivacyPolicy() {
   
         <h2 className="text-xl font-semibold mt-8 mb-2">8. Changes to This Policy</h2>
         <p className="mb-4">
-          We may update this Privacy Policy periodically. Changes will be posted on this page with an updated "Last updated" date.
+          We may update this Privacy Policy periodically. Changes will be posted on this page with an updated &quot;Last updated&quot; date.
         </p>
   
         <p className="mt-10 text-sm text-gray-600">

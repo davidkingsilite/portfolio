@@ -4,7 +4,7 @@ export default function SupportPage() {
         <h1 className="text-3xl font-bold mb-6">Support</h1>
   
         <p className="mb-6 text-gray-600">
-          Need help with a project, technical issue, or have questions about working with us? We're here to support you. Use the options below to get in touch.
+          Need help with a project, technical issue, or have questions about working with us? We&apos;re here to support you. Use the options below to get in touch.
         </p>
   
         <section className="space-y-10">

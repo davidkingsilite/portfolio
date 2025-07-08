@@ -23,7 +23,7 @@ export default function MaintenancePage() {
         <section className="mb-16">
           <h2 className="text-2xl font-semibold mb-4">🛡️ Why Maintenance Is Important</h2>
           <p className="text-gray-700 mb-6">
-            A website is never truly "done." Without regular updates, it becomes vulnerable to hackers, outdated for users, and slow for visitors. Ongoing maintenance ensures:
+            A website is never truly &quot;done.&quot; Without regular updates, it becomes vulnerable to hackers, outdated for users, and slow for visitors. Ongoing maintenance ensures:
           </p>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-gray-50 p-6 rounded-lg border">

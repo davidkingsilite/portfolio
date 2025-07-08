@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function UIUXPage() {
     return (
       <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 font-bevietnam text-gray-800">
@@ -22,7 +24,7 @@ export default function UIUXPage() {
         <section className="mb-16">
           <h2 className="text-2xl font-semibold mb-4">🎯 Why UI/UX Design Matters</h2>
           <p className="text-gray-700 mb-4">
-            Great design isn’t just about aesthetics — it's about guiding users effortlessly toward their goals. Whether it's booking a service or managing data, our design puts clarity and usability first.
+            Great design isn’t just about aesthetics — it&apos;s about guiding users effortlessly toward their goals. Whether it&apos;s booking a service or managing data, our design puts clarity and usability first.
           </p>
   
           <div className="grid md:grid-cols-2 gap-6">
@@ -57,14 +59,14 @@ export default function UIUXPage() {
         <section className="text-center">
           <h2 className="text-2xl font-bold mb-4">Let’s Design Something That Works</h2>
           <p className="text-gray-600 mb-6">
-            Whether you're building an MVP, redesigning an app, or scaling your product — we’re ready to partner with you.
+            Whether you&apos;re building an MVP, redesigning an app, or scaling your product — we’re ready to partner with you.
           </p>
-          <a
-            href="/quote"
+          <Link
+            href="/contact"
             className="inline-block bg-black text-white px-6 py-3 rounded hover:bg-gray-800 transition font-medium"
           >
             Request a Free Quote
-          </a>
+          </Link>
         </section>
       </main>
     );
