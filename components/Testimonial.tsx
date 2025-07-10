@@ -7,7 +7,7 @@ import Image from 'next/image';
 const testimonials = [
   {
     name: 'Anna Fox',
-    role: 'Business Owner',
+    role: 'Business Owner, Chicago IL',
     rating: 5,
     message:
       '"Working with ilite.dev was a game changer. The project was delivered on time, with attention to detail, and exceeded our expectations. Highly recommended!"',
@@ -15,7 +15,7 @@ const testimonials = [
   },
   {
     name: 'Claire Whitmore',
-    role: 'Business Owner',
+    role: 'Small Business Owner, Chicago IL',
     rating: 5,
     message:
       '"Professional, creative, and reliable. They understood exactly what we needed and brought our vision to life perfectly."',
@@ -23,7 +23,7 @@ const testimonials = [
   },
   {
     name: 'Emily Carter',
-    role: 'Tech Startup Founder',
+    role: 'Tech Startup Founder, Chicago IL',
     rating: 5,
     message:
       '"One of the best collaborators I’ve worked with. The quality, communication, and dedication were top-notch from start to finish."',
@@ -97,7 +97,7 @@ export default function Testimonials() {
             <div className='relative flex self-end p-4'>
                <div className="flex-1">
                  <h3 className="text-lg sm:text-2xl md:text-3xl font-semibold">{name}</h3>
-                 <p className="text-sm sm:text-lg md:text-2xl text-gray-500">{role}</p>
+                 <p className="text-sm sm:text-base md:text-lg text-white">{role}</p>
 
                <div className="flex items-center gap-1 my-2">
                  {Array.from({ length: rating }).map((_, i) => (

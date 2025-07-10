@@ -23,9 +23,22 @@ const beVietnam = Be_Vietnam_Pro({
 });
 
 // app/layout.tsx
-export const metadata:  Metadata  = {
-  title: 'My Portfolio | Full-Stack Developer',
-  description: 'Portfolio of David – Web Developer with expertise in Next.js, React, Tailwind, MongoDB.',
+export const metadata: Metadata = {
+  title: 'Chicago Web Designer | ilite.dev',
+  description: 'Professional web design and development services for small businesses in Chicago, Illinois. Mobile-first, SEO-ready websites built to grow your brand.',
+  keywords: ['Chicago web designer', 'web development Illinois', 'affordable small business website', 'Chicago UI/UX designer'],
+  metadataBase: new URL('https://www.ilite.dev'),
+  openGraph: {
+    title: 'Chicago Web Designer | ilite.dev',
+    description: 'We help small businesses in Chicago grow with modern, responsive websites.',
+    url: 'https://www.ilite.dev',
+    siteName: 'ilite.dev',
+    locale: 'en_US',
+    type: 'website',
+  },
+  alternates: {
+    canonical: 'https://www.ilite.dev',
+  },
 };
 
 
