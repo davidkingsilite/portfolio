@@ -21,9 +21,9 @@ export default function Footer() {
         <div>
           <h3 className="font-semibold mb-4">Company</h3>
           <ul className="space-y-2 text-sm text-gray-300">
-            <li><Link href="/about-us">About Us</Link></li>
+            <li><Link href="/about">About Us</Link></li>
             <li><Link href="/services">Services</Link></li>
-            <li><Link href="/about-us">Our Team</Link></li>
+            <li><Link href="/about">Our Team</Link></li>
           </ul>
         </div>
 
