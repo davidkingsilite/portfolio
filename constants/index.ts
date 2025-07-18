@@ -16,14 +16,14 @@ export const projects = [
     projectUrl: 'https://ecommerce-site.com',
     techStack: ['React', 'Next.js','Tailwind CSS', 'Stripe'],
   },
-  {
-    id: 3,
-    title: 'An Art Gallery Online Store',
-    description: 'Art Saving Lives.',
-    imageUrl: '/artsavin.png',
-    projectUrl: 'https://artsavinglifes.onrender.com',
-    techStack: ['React', 'Next.js', 'Material UI', 'Stripe'],
-  },
+  // {
+  //   id: 3,
+  //   title: 'An Art Gallery Online Store',
+  //   description: 'Art Saving Lives.',
+  //   imageUrl: '/artsavin.png',
+  //   projectUrl: 'https://artsavinglifes.onrender.com',
+  //   techStack: ['React', 'Next.js', 'Material UI', 'Stripe'],
+  // },
   {
     id: 4,
     title: 'A Travelling Experience Web Application',
