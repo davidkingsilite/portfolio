@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import TawkChat from "@/components/Tawkchat";
+import Head from "next/head";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -49,6 +50,42 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "name": "Ilite",
+              "description": "We provide web development and SEO services tailored for small businesses.",
+              "url": "https://ilite.dev",
+              "logo": "https://ilite.dev/logo.png",
+              "telephone": "+00000000000",
+              "areaServed": {
+                "@type": "Place",
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressLocality": "Chicago, Illinois",
+                  "addressCountry": "US"
+                }
+              },
+              "sameAs": [
+                "https://www.linkedin.com/in/nwachukwu-david-b5391a8b?trk=contact-info",
+                "https://github.com/davidkingsilite"
+              ],
+              "openingHours": "Mo-Fr 09:00-17:00",
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+0000000000",
+                "email": "ilite.dev@gmail.com || support@ilite.dev",
+                "contactType": "Customer Service"
+                
+              }
+            }),
+          }}
+        />
+      </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${beVietnam.variable} antialiased`}
       >
