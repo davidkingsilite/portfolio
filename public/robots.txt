@@ -2,8 +2,14 @@
 User-agent: *
 Allow: /
 
+# Googlebot-Image
+User-agent: Googlebot-Image
+Disallow: /private-media
+
 # Host
 Host: https://ilite.dev
 
 # Sitemaps
 Sitemap: https://ilite.dev/sitemap.xml
+Sitemap: https://ilite.dev/sitemap-blog.xml
+Sitemap: https://ilite.dev/sitemap-services.xml
