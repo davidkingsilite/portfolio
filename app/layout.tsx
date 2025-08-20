@@ -100,7 +100,7 @@ export default function RootLayout({
         />
       </Head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${beVietnam.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${beVietnam.variable} ${lato.variable} ${outfit.variable} antialiased`}
       >
         <Navbar />
           <main className="min-h-screen">{children}</main>
