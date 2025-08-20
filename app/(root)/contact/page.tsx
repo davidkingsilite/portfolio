@@ -1,7 +1,3 @@
-
-
-
-
 import React from 'react';
 import { Mail, Phone, MapPin, Hourglass } from 'lucide-react';
 import ContactForm from '@/components/ContactForm';

@@ -1,6 +1,4 @@
- 
-
-'use client';
+ 'use client';
 
 import { ProjectCardProps } from '@/type';
 import Image from 'next/image';

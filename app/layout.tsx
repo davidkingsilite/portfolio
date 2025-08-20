@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Be_Vietnam_Pro, Geist, Geist_Mono } from "next/font/google";
+import { Be_Vietnam_Pro, Geist, Geist_Mono, Lato, Outfit } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -20,6 +20,19 @@ const beVietnam = Be_Vietnam_Pro({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700', '800'],
   variable: '--font-be-vietnam',
+  display: 'swap',
+});
+
+const lato = Lato({
+  subsets: ['latin'],
+  weight: ['300', '400', '700', '900'], // Add weights you need
+  variable: '--font-lato', // Optional, for use with Tailwind
+  display: 'swap',
+});
+const outfit = Outfit({
+  subsets: ['latin'],
+  weight: ['300', '400', '700', '900'], // Add weights you need
+  variable: '--font-outfit', // Optional, for use with Tailwind
   display: 'swap',
 });
 
