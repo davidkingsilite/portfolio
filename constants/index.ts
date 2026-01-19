@@ -1,6 +1,24 @@
 export const projects = [
+
+
   {
     id: 1,
+    title: 'Political Candidate Profile for Public Assessment (PCPPA)',
+    description: 'This portal is designed for registered political candidates to securely create and manage their official public profiles.',
+    imageUrl: '/pcppa.png',
+    projectUrl: 'https://pcppa.com/',
+    techStack: ['Next.js', 'typescript', 'Tailwind CSS', 'MongoDB'],
+  },
+  {
+    id: 2,
+    title: 'ProCleaning Website',
+    description: 'At Optimum Quality Behavioral Health PLLC, we are committed to delivering top-tier services for our patients',
+    imageUrl: '/optimumqbh.png',
+    projectUrl: 'https://optimumqualitybehavioral.vercel.app/',
+    techStack: ['Next.js', 'typescript','Tailwind CSS', 'MongoDB'],
+  },
+  {
+    id: 3,
     title: 'ProCleaning Website',
     description: 'A ProCleaning Website with markdown support, admin dashboard and Stripe integration.',
     imageUrl: '/procleaning.png',
@@ -9,7 +27,7 @@ export const projects = [
   },
   
   {
-    id: 2,
+    id: 4,
     title: 'E-commerce Store',
     description: 'An online store built with full cart functionality and Stripe integration.',
     imageUrl: '/cardealer.png',
@@ -25,7 +43,7 @@ export const projects = [
   //   techStack: ['React', 'Next.js', 'Material UI', 'Stripe'],
   // },
   {
-    id: 4,
+    id: 5,
     title: 'A Travelling Experience Web Application',
     description: 'A Travel Experience app with admin dashboard.',
     imageUrl: '/travelexp.png',
@@ -33,7 +51,7 @@ export const projects = [
     techStack: ['React.js', 'Prisma', 'MongoDB'],
   },
   {
-    id: 5,
+    id: 6,
     title: 'Portfolio Website',
     description: 'A personal portfolio built using Next.js 15, Tailwind CSS, and TypeScript.',
     imageUrl: '/devportfolio.png',
@@ -41,13 +59,14 @@ export const projects = [
     techStack: ['Next.js', 'TypeScript', 'Tailwind CSS'],
   },
   {
-    id: 6,
+    id: 7,
     title: 'AI Chat Bot',
     description: 'Coming Soon',
     imageUrl: '/carbon.png',
     projectUrl: 'YourProject Site.com',
     techStack: ['Next.js', 'MongoDB'],
   },
+
 ];
 
 type NavLink = {
