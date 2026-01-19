@@ -11,7 +11,7 @@ export const projects = [
   },
   {
     id: 2,
-    title: 'ProCleaning Website',
+    title: 'Optimum Quality Behavioral HealthCare',
     description: 'At Optimum Quality Behavioral Health PLLC, we are committed to delivering top-tier services for our patients',
     imageUrl: '/optimumqbh.png',
     projectUrl: 'https://optimumqualitybehavioral.vercel.app/',
