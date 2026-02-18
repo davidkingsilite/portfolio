@@ -31,17 +31,17 @@ const ContactPage = () => {
             <Mail className="text-primary-green-100 w-5 h-5 mt-1" />
             <div>
               <h4 className="font-semibold">Emails</h4>
-              <p className="text-sm text-gray-600">ilite.dev@gmail.com || support@ilite.dev</p>
+              <p className="text-[16px] text-gray-600"> support@ilite.dev</p>
             </div>
           </div>
 
-          <div className="flex items-start gap-4">
+          {/* <div className="flex items-start gap-4">
             <Phone className="text-primary-green-100 w-5 h-5 mt-1" />
             <div>
               <h4 className="font-semibold">Phone</h4>
               <p className="text-sm text-gray-600">+1 (312) 444-0790</p>
             </div>
-          </div>
+          </div> */}
 
           <div className="flex items-start gap-4">
             <Hourglass className="text-primary-green-100 w-5 h-5 mt-1" />

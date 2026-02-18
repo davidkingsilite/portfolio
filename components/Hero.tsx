@@ -28,6 +28,18 @@ export default function Hero() {
           >
             Hire Me
           </Link>
+         
+  
+         <Link
+           href="https://wa.me/2347063234954?text=Hi%20David,%20I%20visited%20ilite.dev%20and%20would%20like%20to%20discuss%20a%20project."
+           target="_blank"
+           rel="noopener noreferrer"
+           className="fixed bottom-4 left-6 bg-green-500 hover:bg-green-600 text-white px-4 py-3 rounded-full shadow-lg transition z-100"
+           >
+          Chat on WhatsApp
+        </Link>
+  
+
         </div>
       </div>
 

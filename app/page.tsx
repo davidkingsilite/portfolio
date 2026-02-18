@@ -4,6 +4,7 @@ import Testimonials from '@/components/Testimonial'
 import { projects } from '@/constants'
 import ContactPage from './(root)/contact/page'
 import Link from 'next/link'
+import AboutPage from './(root)/about/page'
 
 export default function Home() {
 
@@ -22,11 +23,12 @@ export default function Home() {
           href="/projects"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block mt-4 px-4 py-2 text-sm font-medium text-white bg-black rounded hover:bg-gray-800 transition"
+          className="inline-block mt-8 px-4 py-4 text-sm font-medium text-white bg-black rounded hover:bg-gray-800 transition"
         >
           See All Projects
         </Link>
       </div>
+      <AboutPage/>
       <Testimonials />
       <ContactPage />
     </section>

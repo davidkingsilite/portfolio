@@ -2,7 +2,6 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
 
 const AboutPage = () => {
   return (
@@ -43,6 +42,28 @@ const AboutPage = () => {
           <p>
             Let’s work together to bring your vision to life.
           </p>
+
+          <p>Professional Profiles</p>
+
+          <div className='gap-2 flex'>
+          <Link
+           href="https://github.com/davidkingsilite"
+           target="_blank"
+           rel="noopener noreferrer"
+           className=" bg-green-600 hover:bg-green-700 text-white px-4 py-3 rounded-full shadow-lg transition"
+           >
+          Check my Github
+          </Link>
+          <Link
+           href="https://www.linkedin.com/in/nwachukwu-david-b5391a8b?trk=contact-info"
+           target="_blank"
+           rel="noopener noreferrer"
+           className=" bg-green-600 hover:bg-green-700 text-white px-4 py-3 rounded-full shadow-lg transition"
+           >
+          Check my Linkedin Profile
+          </Link>
+          </div>
+          
 
           {/* Optional: CTA */}
           <Link
